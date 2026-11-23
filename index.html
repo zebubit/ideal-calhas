@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/f/hero.webp" imagesrcset="img/f/hero-m.webp 1100w, img/f/hero.webp 2400w" imagesizes="100vw">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Ideal Calhas","image":"https://idealcalhas.com.br/img/og.jpg","telephone":"+55 65 99968-7558","address":{"@type":"PostalAddress","streetAddress":"Av. José Estêvão Torquato da Silva, 1769, Jardim Vitória","addressLocality":"Cuiabá","addressRegion":"MT","postalCode":"78055-731","addressCountry":"BR"},"geo":{"@type":"GeoCoordinates","latitude":-15.5441811,"longitude":-56.0606305},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"9"},"areaServed":"Cuiabá, MT"}
+{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "@id": "https://idealcalhas.com.br/#empresa", "name": "Ideal Calhas", "url": "https://idealcalhas.com.br/", "image": "https://idealcalhas.com.br/img/og.jpg", "logo": "https://idealcalhas.com.br/img/logo.png", "telephone": "+55 65 99968-7558", "foundingDate": "2013", "description": "Fabricação e instalação de calhas, rufos, condutores, pingadeiras, coifas e dutos sob medida em Cuiabá e Várzea Grande.", "address": {"@type": "PostalAddress", "streetAddress": "Av. José Estêvão Torquato da Silva, 1769, Jardim Vitória", "addressLocality": "Cuiabá", "addressRegion": "MT", "postalCode": "78055-731", "addressCountry": "BR"}, "geo": {"@type": "GeoCoordinates", "latitude": -15.5441811, "longitude": -56.0606305}, "areaServed": [{"@type": "City", "name": "Cuiabá"}, {"@type": "City", "name": "Várzea Grande"}], "sameAs": ["https://www.instagram.com/idealcalhascuiaba", "https://www.facebook.com/idealcalhascuiaba", "https://www.tiktok.com/@idealcalhascuiaba", "https://maps.google.com/?cid=1990611860822098043"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Serviços", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Calhas", "url": "https://idealcalhas.com.br/calhas/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rufos", "url": "https://idealcalhas.com.br/rufos/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Condutores", "url": "https://idealcalhas.com.br/condutores/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pingadeiras", "url": "https://idealcalhas.com.br/pingadeiras/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coifas e dutos", "url": "https://idealcalhas.com.br/coifas-e-dutos/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Calhas de platibanda", "url": "https://idealcalhas.com.br/calhas-de-platibanda/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Limpeza e manutenção de calhas", "url": "https://idealcalhas.com.br/limpeza-de-calhas/"}}]}}
 </script>
 <style>
 :root{
@@ -87,9 +87,9 @@ svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke
 .badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(5,8,12,.55);backdrop-filter:blur(8px);font-size:.88rem;color:#DDE7EE}
 .badge .g{width:22px;height:22px}
 .badge b{color:#FFC93C;letter-spacing:.08em}
-.hero h1{font-size:clamp(3.4rem,10.5vw,8.6rem);font-weight:800;margin:22px 0 18px;max-width:11ch}
-.hero h1 span{display:block}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--blue-l),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .slogan{font-family:var(--tit);text-transform:uppercase;line-height:.98;font-size:clamp(3.4rem,10.5vw,8.6rem);font-weight:800;margin:22px 0 18px;max-width:11ch}
+.hero .slogan span{display:block}
+.hero .slogan em{font-style:normal;background:linear-gradient(90deg,var(--blue-l),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{font-size:clamp(1.05rem,1.6vw,1.25rem);color:#C9D6DF;max-width:560px;margin-bottom:32px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
 .hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:44px;color:var(--mut);font-size:.9rem}
@@ -265,6 +265,11 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
   #rain{display:none}
   html{scroll-behavior:auto}
 }
+.hero h1.kick{font:600 clamp(.95rem,1.5vw,1.15rem)/1.4 var(--body);text-transform:none;letter-spacing:.02em;color:var(--blue-l);margin:20px 0 0;max-width:none}
+.lk2{display:inline-block;margin-left:14px;font-size:.9rem;color:#C9D6DF;text-decoration:underline;text-underline-offset:3px}
+.also{margin-top:22px;color:var(--mut)}.also a{color:var(--blue-l);text-decoration:underline;text-underline-offset:3px}
+.ft-serv{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;font-size:.88rem;margin-bottom:14px}.ft-serv a{color:#C9D6DF}
+.ft-nap{font-size:.85rem;color:var(--mut);margin-bottom:10px}
 </style>
 </head>
 <body>
@@ -295,7 +300,8 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
   <canvas id="rain" aria-hidden="true"></canvas>
   <div class="wrap">
     <a class="badge rv-up" href="#avaliacoes"><svg class="g"><use href="#g"/></svg><b>★★★★★</b> 5,0 no Google</a>
-    <h1 class="rv-up d1"><span>Chuva forte</span><span>pede calha</span><em>Ideal.</em></h1>
+    <h1 class="kick rv-up">Calhas e rufos sob medida em Cuiabá e Várzea Grande</h1>
+    <p class="slogan rv-up d1"><span>Chuva forte</span><span>pede calha</span><em>Ideal.</em></p>
     <p class="rv-up d2">Calhas, rufos, condutores e pingadeiras sob medida em Cuiabá. Fabricação e instalação com acabamento impecável, para sua casa, seu comércio ou sua indústria.</p>
     <div class="cta-row rv-up d3">
       <a class="btn btn-p" data-wa="Olá! Vim pelo seu site e quero um orçamento de calhas e rufos." href="https://wa.me/5565999687558" target="_blank" rel="noopener"><svg class="i" style="fill:currentColor;stroke:none"><use href="#wa"/></svg>Pedir orçamento</a>
@@ -304,7 +310,7 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
     <div class="hero-meta rv-up d3">
       <span><svg class="i"><use href="#chk"/></svg>Fabricação sob medida</span>
       <span><svg class="i"><use href="#chk"/></svg>Residencial, comercial e industrial</span>
-      <span><svg class="i"><use href="#chk"/></svg>Cuiabá, MT</span>
+      <span><svg class="i"><use href="#chk"/></svg>Cuiabá e Várzea Grande</span>
     </div>
   </div>
   <div class="scroll-hint">Role</div>
@@ -349,13 +355,14 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
       <p class="lead rv-up d2">Escolha o serviço e fale direto com a Ideal no WhatsApp, com a mensagem já escrita.</p>
     </div>
     <div class="cards">
-      <article class="card rv-up"><div class="ph"><span class="num">01</span><img src="img/f/s-calhas.webp" alt="Calha galvanizada em quiosque com telha cerâmica" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Calhas</h3><p>Captam a água do telhado e levam para o lugar certo. Sem goteira na porta, sem parede manchada, sem infiltração.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de calhas." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar calhas <svg class="i"><use href="#arr"/></svg></a></div></article>
-      <article class="card rv-up d1"><div class="ph"><span class="num">02</span><img src="img/f/s-rufos.webp" alt="Rufo galvanizado em telhado cerâmico" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Rufos</h3><p>Fazem a vedação entre o telhado e a parede, a platibanda ou a chaminé, onde a água mais costuma entrar.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de rufos." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar rufos <svg class="i"><use href="#arr"/></svg></a></div></article>
-      <article class="card rv-up d2"><div class="ph"><span class="num">03</span><img src="img/f/s-condutores.webp" alt="Calha com saída para o condutor" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Condutores</h3><p>Os tubos que descem a água da calha até o chão ou a rede, com vazão certa para chuva forte.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de condutores." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar condutores <svg class="i"><use href="#arr"/></svg></a></div></article>
-      <article class="card rv-up"><div class="ph"><span class="num">04</span><img src="img/f/s-coifas.webp" alt="Coifa em inox" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Coifas</h3><p>Captam fumaça, gordura e calor da cozinha. Para casas, restaurantes e cozinhas industriais.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de coifa." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar coifas <svg class="i"><use href="#arr"/></svg></a></div></article>
-      <article class="card rv-up d1"><div class="ph"><span class="num">05</span><img src="img/f/s-dutos.webp" alt="Coifa com dutos galvanizados" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Dutos</h3><p>Levam o ar da coifa ou da exaustão para fora, feitos sob medida para o caminho da sua obra.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de dutos." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar dutos <svg class="i"><use href="#arr"/></svg></a></div></article>
-      <article class="card rv-up d2"><div class="ph"><span class="num">06</span><img src="img/f/s-pingadeiras.webp" alt="Água pingando da borda do telhado" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Pingadeiras</h3><p>Protegem o topo de muros e platibandas e afastam a água da parede. Fim da mancha escura e do mofo.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de pingadeiras." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar pingadeiras <svg class="i"><use href="#arr"/></svg></a></div></article>
+      <article class="card rv-up"><div class="ph"><span class="num">01</span><img src="img/f/s-calhas.webp" alt="Calha galvanizada em quiosque com telha cerâmica" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Calhas</h3><p>Captam a água do telhado e levam para o lugar certo. Sem goteira na porta, sem parede manchada, sem infiltração.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de calhas." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar calhas <svg class="i"><use href="#arr"/></svg></a><a class="lk2" href="/calhas/">Saiba mais</a></div></article>
+      <article class="card rv-up d1"><div class="ph"><span class="num">02</span><img src="img/f/s-rufos.webp" alt="Rufo galvanizado em telhado cerâmico" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Rufos</h3><p>Fazem a vedação entre o telhado e a parede, a platibanda ou a chaminé, onde a água mais costuma entrar.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de rufos." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar rufos <svg class="i"><use href="#arr"/></svg></a><a class="lk2" href="/rufos/">Saiba mais</a></div></article>
+      <article class="card rv-up d2"><div class="ph"><span class="num">03</span><img src="img/f/s-condutores.webp" alt="Calha com saída para o condutor" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Condutores</h3><p>Os tubos que descem a água da calha até o chão ou a rede, com vazão certa para chuva forte.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de condutores." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar condutores <svg class="i"><use href="#arr"/></svg></a><a class="lk2" href="/condutores/">Saiba mais</a></div></article>
+      <article class="card rv-up"><div class="ph"><span class="num">04</span><img src="img/f/s-coifas.webp" alt="Coifa em inox" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Coifas</h3><p>Captam fumaça, gordura e calor da cozinha. Para casas, restaurantes e cozinhas industriais.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de coifa." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar coifas <svg class="i"><use href="#arr"/></svg></a><a class="lk2" href="/coifas-e-dutos/">Saiba mais</a></div></article>
+      <article class="card rv-up d1"><div class="ph"><span class="num">05</span><img src="img/f/s-dutos.webp" alt="Coifa com dutos galvanizados" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Dutos</h3><p>Levam o ar da coifa ou da exaustão para fora, feitos sob medida para o caminho da sua obra.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de dutos." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar dutos <svg class="i"><use href="#arr"/></svg></a><a class="lk2" href="/coifas-e-dutos/">Saiba mais</a></div></article>
+      <article class="card rv-up d2"><div class="ph"><span class="num">06</span><img src="img/f/s-pingadeiras.webp" alt="Água pingando da borda do telhado" loading="lazy" width="1100" height="733"></div><div class="bd"><h3>Pingadeiras</h3><p>Protegem o topo de muros e platibandas e afastam a água da parede. Fim da mancha escura e do mofo.</p><a class="lk" data-wa="Olá! Vim pelo seu site e quero um orçamento de pingadeiras." href="https://wa.me/5565999687558" target="_blank" rel="noopener">Orçar pingadeiras <svg class="i"><use href="#arr"/></svg></a><a class="lk2" href="/pingadeiras/">Saiba mais</a></div></article>
     </div>
+    <p class="also">Também fazemos <a href="/calhas-de-platibanda/">calhas de platibanda</a> e <a href="/limpeza-de-calhas/">limpeza e manutenção de calhas</a>.</p>
   </div>
 </section>
 
@@ -496,6 +503,8 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
 <footer>
   <div class="wrap ft">
     <img src="img/logo.png" alt="Ideal Calhas" width="470" height="313" loading="lazy">
+    <nav class="ft-serv" aria-label="Serviços"><a href="/calhas/">Calhas</a><a href="/rufos/">Rufos</a><a href="/condutores/">Condutores</a><a href="/pingadeiras/">Pingadeiras</a><a href="/coifas-e-dutos/">Coifas e dutos</a><a href="/calhas-de-platibanda/">Calhas de platibanda</a><a href="/limpeza-de-calhas/">Limpeza e manutenção de calhas</a></nav>
+    <p class="ft-nap">Ideal Calhas · Av. José Estêvão Torquato da Silva, 1769, Jardim Vitória, Cuiabá, MT, 78055-731 · <a href="tel:+5565999687558">(65) 99968-7558</a> · Atendemos Cuiabá e Várzea Grande</p>
     <p>© 2026 Ideal Calhas. Todos os direitos reservados. · Desenvolvido por <a class="z" href="https://zebubit.com.br" target="_blank" rel="noopener">Zebubit Assessoria</a></p>
   </div>
 </footer>
