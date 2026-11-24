@@ -86,9 +86,9 @@ svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke
 .badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 10px;border:1px solid var(--line);border-radius:999px;background:rgba(5,8,12,.55);backdrop-filter:blur(8px);font-size:.88rem;color:#DDE7EE}
 .badge .g{width:22px;height:22px}
 .badge b{color:#FFC93C;letter-spacing:.08em}
-.hero h1{font-size:clamp(3.4rem,10.5vw,8.6rem);font-weight:800;margin:22px 0 18px;max-width:11ch}
-.hero h1 span{display:block}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--blue-l),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .slogan{font-family:var(--tit);text-transform:uppercase;line-height:.98;font-size:clamp(3.4rem,10.5vw,8.6rem);font-weight:800;margin:22px 0 18px;max-width:11ch}
+.hero .slogan span{display:block}
+.hero .slogan em{font-style:normal;background:linear-gradient(90deg,var(--blue-l),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{font-size:clamp(1.05rem,1.6vw,1.25rem);color:#C9D6DF;max-width:560px;margin-bottom:32px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
 .hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:44px;color:var(--mut);font-size:.9rem}
@@ -264,6 +264,11 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
   #rain{display:none}
   html{scroll-behavior:auto}
 }
+.hero h1.kick{font:600 clamp(.95rem,1.5vw,1.15rem)/1.4 var(--body);text-transform:none;letter-spacing:.02em;color:var(--blue-l);margin:20px 0 0;max-width:none}
+.lk2{display:inline-block;margin-left:14px;font-size:.9rem;color:#C9D6DF;text-decoration:underline;text-underline-offset:3px}
+.also{margin-top:22px;color:var(--mut)}.also a{color:var(--blue-l);text-decoration:underline;text-underline-offset:3px}
+.ft-serv{display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;font-size:.88rem;margin-bottom:14px}.ft-serv a{color:#C9D6DF}
+.ft-nap{font-size:.85rem;color:var(--mut);margin-bottom:10px}
 
 .sp-hero{padding:140px 0 clamp(48px,7vw,80px);background:radial-gradient(900px 500px at 85% 0%,rgba(31,163,230,.16),transparent 60%)}
 .sp-g{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,56px);align-items:center}
@@ -363,7 +368,7 @@ footer{border-top:1px solid var(--line);padding:46px 0 110px;color:var(--mut);fo
   <div class="wrap ft">
     <img src="/img/logo.png" alt="Ideal Calhas" width="470" height="313" loading="lazy">
     <nav class="ft-serv" aria-label="Serviços"><a href="/calhas/">Calhas</a><a href="/rufos/">Rufos</a><a href="/condutores/">Condutores</a><a href="/pingadeiras/">Pingadeiras</a><a href="/coifas-e-dutos/">Coifas e dutos</a><a href="/calhas-de-platibanda/">Calhas de platibanda</a><a href="/limpeza-de-calhas/">Limpeza e manutenção de calhas</a></nav>
-    <p class="ft-nap">Ideal Calhas · Av. José Estêvão Torquato da Silva, 1769, Jardim Vitória, Cuiabá, MT, 78055-731 · <a href="tel:+5565999687558">(65) 99968-7558</a> · Atendemos Cuiabá e Várzea Grande</p>
+    <p class="ft-nap">Ideal Calhas · Av. José Estêvão Torquato da Silva, 1769, Jardim Vitória, Cuiabá, MT, 78055-731 · <a href="tel:+5565999687558">(65) 99968-7558</a> · Seg a sex 7h às 18h, sáb 7h às 14h · Atendemos Cuiabá e Várzea Grande</p>
     <p>© 2026 Ideal Calhas. Todos os direitos reservados. · Desenvolvido por <a class="z" href="https://zebubit.com.br" target="_blank" rel="noopener">Zebubit Assessoria</a></p>
   </div>
 </footer>
